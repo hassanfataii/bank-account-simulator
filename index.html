@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>H-BANK | HOME</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css" integrity="sha512-ApSLB1Pd3/bZN8fWB/RG9YhN/7bd9Hkf3AGaE2mPfebjrxagjuBtx2GcgdqIlJkUzwylBo61r9Xa9NmgBI0swA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
+    <link rel="stylesheet" href="style/style.css">
 </head>
 <body>
     <main>
@@ -25,7 +25,7 @@
                 </form>
             </div>
 
-            <div class="dashboard" hidden>
+            <div class="dashboard">
                 <h2>Welcome <span id="account-holder">User</span></h2>
                 <div class="account-details">
                     <p>
@@ -40,7 +40,7 @@
                 </div>
 
                 <section class="transactions">
-                    <div class="deposit">
+                    <div class="transaction">
                         <button type="button" id="deposit-toggle">DEPOSIT</button>
                         <form class="transaction-form" id="deposit-form">
                             <div class="user-details">
@@ -50,7 +50,7 @@
                             <button type="submit">DEPOSIT</button>
                         </form>
                     </div>
-                    <div class="withdraw">
+                    <div class="transaction">
                         <button type="button" id="withdraw-toggle">WITHDRAW</button>
                         <form id="withdraw-form" class="transaction-form">
                             <div class="user-details">
@@ -60,15 +60,33 @@
                             <button type="submit">WITHDRAW</button>
                         </form>
                     </div>
-                    <div class="transactions-history">
+                </section>
+                <section class="transaction-history">
                         <h3>TRANSACTION HISTORY</h3>
                         <ul id="transaction-list">
                             <li><p>+ £2000 deposited</p></li>
                             <li><p>- £200 withdrawn</p></li>
+                            <li><p>+ £2000 deposited</p></li>
+                            <li><p>- £200 withdrawn</p></li>
+                            <li><p>+ £2000 deposited</p></li>
+                            <li><p>- £200 withdrawn</p></li>
+                            <li><p>+ £2000 deposited</p></li>
+                            <li><p>- £200 withdrawn</p></li>
+                            <li><p>+ £2000 deposited</p></li>
+                            <li><p>- £200 withdrawn</p></li>
+                            <li><p>+ £2000 deposited</p></li>
+                            <li><p>- £200 withdrawn</p></li>
+                            <li><p>+ £2000 deposited</p></li>
+                            <li><p>- £200 withdrawn</p></li>
+                            <li><p>+ £2000 deposited</p></li>
+                            <li><p>- £200 withdrawn</p></li>
+                            <li><p>+ £2000 deposited</p></li>
+                            <li><p>- £200 withdrawn</p></li>
+                            <li><p>+ £2000 deposited</p></li>
+                            <li><p>- £200 withdrawn</p></li>
                         </ul>
-                    </div>
-                    <button type="button" id="reset-account">RESET ACCOUNT</button>
                 </section>
+                <button type="button" id="reset-account">RESET ACCOUNT</button>
             </div>
         </section>
     </main>
