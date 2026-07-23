@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>H-BANK | HOME</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css" integrity="sha512-ApSLB1Pd3/bZN8fWB/RG9YhN/7bd9Hkf3AGaE2mPfebjrxagjuBtx2GcgdqIlJkUzwylBo61r9Xa9NmgBI0swA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <main>
+        <header>
+            <p class="logo"><i class="fa-solid fa-money-bill-transfer"></i> H-BANK</p>
+        </header>
+        <section class="hero">
+            <div class="account-setup">
+                <h1>WELCOME</h1>
+                <p>Create your simulated account</p>
+                <form action="" class="create-user" id="create-account-form">
+                    <div class="user-details">
+                        <label for="user"> ENTER YOUR NAME</label>
+                        <input type="text" name="user" id="user" placeholder="Enter your name">
+                    </div>
+                    <button type="submit">CREATE ACCOUNT</button>
+                </form>
+            </div>
+
+            <div class="dashboard" hidden>
+                <h2>Welcome <span id="account-holder">User</span></h2>
+                <div class="account-details">
+                    <p>
+                        Account Number: 
+                        <span id="account-number">24467889</span>
+                    </p>
+                    <p>
+                        Sort Code: 
+                        <span id="sort-code">09-03-09</span>
+                    </p>
+                    <p class="balance" id="account-balance">£3000</p>
+                </div>
+
+                <section class="transactions">
+                    <div class="deposit">
+                        <button type="button" id="deposit-toggle">DEPOSIT</button>
+                        <form class="transaction-form" id="deposit-form">
+                            <div class="user-details">
+                                <label for="deposit-amount">Enter the amount you'd like to deposit</label>
+                                <input type="number" step="0.01" min="0.01" name="amount" id="deposit-amount" placeholder="Deposit amount">
+                            </div>
+                            <button type="submit">DEPOSIT</button>
+                        </form>
+                    </div>
+                    <div class="withdraw">
+                        <button type="button" id="withdraw-toggle">WITHDRAW</button>
+                        <form id="withdraw-form" class="transaction-form">
+                            <div class="user-details">
+                                <label for="withdraw-amount">Enter the amount you'd like to withdraw</label>
+                                <input type="number" step="0.01" min="0.01" name="amount" id="withdraw-amount" placeholder="Withdraw amount">
+                            </div>
+                            <button type="submit">WITHDRAW</button>
+                        </form>
+                    </div>
+                    <div class="transactions-history">
+                        <h3>TRANSACTION HISTORY</h3>
+                        <ul id="transaction-list">
+                            <li><p>+ £2000 deposited</p></li>
+                            <li><p>- £200 withdrawn</p></li>
+                        </ul>
+                    </div>
+                    <button type="button" id="reset-account">RESET ACCOUNT</button>
+                </section>
+            </div>
+        </section>
+    </main>
+    <script type="module" src="js/index.js"></script>
+</body>
+</html>
